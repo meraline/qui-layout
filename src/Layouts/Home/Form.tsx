@@ -25,9 +25,9 @@ export default function Form() {
                             <Dropdown />
                         </div>
                         <label className="absolute top-3 left-4 xl:top-5 xl:left-6 text-neutral-400 text-[11px] xl:text-base">You send</label>
-                        <input className="bg-neutral-700 xl:bg-white w-full pt-10 pb-5 pl-4 xl:pl-6 pr-36 rounded-xl outline outline-2 outline-rose-600 text-rose-600 text-xl xl:text-2xl leading-none" defaultValue="50" />
-                        <div className="absolute z-10 top-full mt-1 text-white bg-rose-700 bg-opacity-40 rounded-[11px] px-4 py-1 flex items-center">
-                            <svg className="w-10 h-auto absolute top-0 -translate-y-full text-rose-700 text-opacity-50" viewBox="0 0 42 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <input className="leading-relaxed bg-neutral-700 xl:bg-white w-full pt-12 pb-5 pl-4 xl:pl-6 pr-36 rounded-xl outline outline-2 outline-rose-600 text-rose-600 text-xl xl:text-2xl" defaultValue="50" />
+                        <div className="absolute z-10 top-full mt-1 text-white bg-rose-700 backdrop-blur-[50px] bg-opacity-50 rounded-[11px] px-4 py-1 flex items-center">
+                            <svg className="w-10 h-auto absolute top-0 -translate-y-full text-rose-700 opacity-50" viewBox="0 0 42 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M29 0L38 9L20 9L29 0Z" fill="currentColor" />
                             </svg>
                             <RedInfo className="w-[22px] h-[22px] mr-2" />
@@ -48,7 +48,7 @@ export default function Form() {
                             <Dropdown />
                         </div>
                         <label className="absolute top-5 left-6 text-neutral-400 text-[11px] xl:text-base">You receive</label>
-                        <input className="bg-neutral-700 xl:bg-white w-full pt-10 pb-5 pl-6 pr-36 rounded-xl text-white xl:text-pink-950 text-xl xl:text-2xl leading-none" defaultValue="0,00544" />
+                        <input className="bg-neutral-700 xl:bg-white w-full pt-12 pb-5 pl-6 pr-36 rounded-xl text-white xl:text-pink-950 text-xl xl:text-2xl" defaultValue="0,00544" />
                     </div>
                     <div className="flex justify-between text-white text-[13px] px-6 py-3">
                         <div className="w-4/5">1 USDT ≈ 0.0054 BTC</div>
@@ -82,8 +82,8 @@ export default function Form() {
                                 <path d="M32 24V28C32 30.2091 30.2091 32 28 32H24M32 12V8C32 5.79086 30.2091 4 28 4H24M12 32H8C5.79086 32 4 30.2091 4 28V24M4 12V8C4 5.79086 5.79086 4 8 4H12" stroke="currentColor" strokeWidth="1.5" />
                             </svg>
                         </div>
-                        <label className="absolute top-5 left-6 text-[11px] xl:text-base text-neutral-400">Destination addreess</label>
-                        <input className=" bg-neutral-700 xl:bg-white w-full pt-10 pb-5 pl-6 pr-16 rounded-xl text-white xl:text-pink-950 text-xl xl:text-2xl leading-none" defaultValue="0x3242437a83f854dbae2c4913e514ea58f27a338f" />
+                        <label className="absolute top-5 left-6 text-[11px] xl:text-base text-neutral-400">Destination address</label>
+                        <input className=" bg-neutral-700 xl:bg-white w-full pt-12 pb-5 pl-6 pr-16 rounded-xl text-white xl:text-pink-950 text-xl xl:text-2xl" defaultValue="0x3242437a83f854dbae2c4913e514ea58f27a338f" />
                     </div>
                     <label className="space-x-3 items-center py-3 hidden xl:flex" htmlFor="ssdfsf">
                         <input type="checkbox" className="hidden peer" id="ssdfsf" />
@@ -109,7 +109,7 @@ export default function Form() {
                                 </div>
                             </div>
                         </label>
-                        <input className="bg-neutral-700 xl:bg-white w-full pt-10 pb-5 px-6 rounded-xl text-white xl:text-pink-950 text-xl xl:text-2xl leading-none" defaultValue="924028" />
+                        <input className="bg-neutral-700 xl:bg-white w-full pt-12 pb-5 px-6 rounded-xl text-white xl:text-pink-950 text-xl xl:text-2xl" defaultValue="924028" />
                     </div>
                     <div className="grow max-w-[10rem] space-x-3 justify-end items-center text-stone-400 py-3 hidden xl:flex">
                         <Shield className="w-4 h-auto" />
@@ -123,23 +123,38 @@ export default function Form() {
                     setModal(<InfoRate />)
                 }}>
                     <div className="xl:hidden text-[13px] mr-2 text-white">Exchange type:</div>
-                    <div className="w-5 h-5 xl:w-8 xl:h-8 bg-neutral-400 rounded-full justify-center items-center flex">
+                    <div className="w-5 h-5 xl:w-8 xl:h-8 bg-neutral-500 rounded-full justify-center items-center flex">
                         <div className="text-white">?</div>
                     </div>
                 </a>
                 <div className="bg-white bg-opacity-50 rounded-[11px] backdrop-blur-sm grow xl:self-start flex text-center xl:mr-3 mb-3 xl:mb-0">
-                    <div className={`py-4 px-4 xl:py-6 xl:px-6 xl:text-lg cursor-pointer w-1/2 ${!locked ? `bg-fuchsia-800 rounded-[11px] shadow text-pink-100 shrink-0` : ``}`} onClick={e => setLocked(false)}>
-                        <div className="items-center flex justify-center">
-                            <Locked className="w-5 h-5 xl:w-8 xl:h-8" />
-                            <div>Fixed (1,0 %)</div>
+                    {!locked ? <>
+                        <PrimaryButton disabled={false} className=" w-1/2 font-normal">
+                            <div className="items-center flex justify-center">
+                                <Locked className="w-5 h-5 xl:w-8 xl:h-8" />
+                                <div>Fixed (1,0 %)</div>
+                            </div>
+                        </PrimaryButton>
+                        <div className={`py-4 px-4 xl:py-6 xl:px-6 xl:text-lg w-1/2`} onClick={e => setLocked(true)}>
+                            <div className="items-center flex justify-center text-zinc-300">
+                                <UnLocked className="w-5 h-5 xl:w-8 xl:h-8" />
+                                <div>Floating (0,5 %)</div>
+                            </div>
                         </div>
-                    </div>
-                    <div className={`py-4 px-4 xl:py-6 xl:px-6 xl:text-lg cursor-pointer w-1/2 ${locked ? `bg-fuchsia-800 rounded-[11px] shadow text-pink-100 shrink-0` : ``}`} onClick={e => setLocked(true)}>
-                        <div className="items-center flex justify-center text-zinc-300">
-                            <UnLocked className="w-5 h-5 xl:w-8 xl:h-8" />
-                            <div>Floating (0,5 %)</div>
+                    </> : <>
+                        <div className={`py-4 px-4 xl:py-6 xl:px-6 xl:text-lg w-1/2`} onClick={e => setLocked(false)}>
+                            <div className="items-center flex justify-center text-zinc-300">
+                                <UnLocked className="w-5 h-5 xl:w-8 xl:h-8" />
+                                <div>Fixed (1,0 %)</div>
+                            </div>
                         </div>
-                    </div>
+                        <PrimaryButton disabled={false} className=" w-1/2 font-normal">
+                            <div className="items-center flex justify-center text-zinc-300">
+                                <UnLocked className="w-5 h-5 xl:w-8 xl:h-8" />
+                                <div>Floating (0,5 %)</div>
+                            </div>
+                        </PrimaryButton>
+                    </>}
                 </div>
                 <label className="space-x-3 items-center py-3 flex xl:hidden" htmlFor="ssdfsf1">
                     <input type="checkbox" className="hidden peer" id="ssdfsf1" />

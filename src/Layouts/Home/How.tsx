@@ -28,7 +28,7 @@ export default function How(props: Object) {
             </div>
             <div className="gap-6 xl:gap-10 grid grid-cols-1 xl:grid-cols-3 mb-8 xl:mb-16">
                 {items.map((item, index) => <div key={index}>
-                    <div className="space-x-8 xl:space-x-0 xl:space-y-4 flex xl:flex-col items-center">
+                    <div className="space-x-8 xl:space-x-0 xl:space-y-4 flex xl:flex-col items-center xl:items-start shadow-numbers">
                         <div className="text-fuchsia-800 text-[80px] font-light shrink-0">{item.number}</div>
                         <div className="space-y-2">
                             <div className="text-zinc-100 text-2xl xl:text-[28px]">{item.title}</div>
