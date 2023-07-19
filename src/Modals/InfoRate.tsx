@@ -9,7 +9,7 @@ export default function InfoRate() {
 
     const { setModal } = useLayout();
 
-    return <div className="w-full max-w-5xl mx-auto bg-neutral-700 py-6 xl:py-10 px-5 rounded-[22px] bg-no-repeat relative" style={{
+    return <div className="w-full max-w-5xl mx-auto bg-black bg-opacity-50 py-6 xl:py-10 px-5 rounded-[22px] bg-no-repeat relative" style={{
         backgroundImage: `url('${ModalBg.src}')`,
         backgroundPositionX: `-600px`,
         backgroundPositionY: `-600px`,

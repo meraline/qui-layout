@@ -10,7 +10,7 @@ export default function Attention() {
 
     const { setModal } = useLayout();
 
-    return <div className="w-full max-w-xl mx-auto bg-neutral-700 py-10 px-5 rounded-[22px] bg-no-repeat relative" style={{
+    return <div className="w-full max-w-xl mx-auto bg-black bg-opacity-50 py-10 px-5 rounded-[22px] bg-no-repeat relative" style={{
         backgroundImage: `url('${ModalBg.src}')`,
         backgroundPositionX: `center`,
         backgroundPositionY: `-700px`,

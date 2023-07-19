@@ -6,7 +6,7 @@ export default function Feedback() {
 
     const { setFeedbackModal } = useLayout();
 
-    return <div className="text-white fixed w-full h-full top-0 left-0 z-50 bg-neutral-700 backdrop-blur-[17px] flex flex-col items-center justify-center">
+    return <div className="text-white fixed w-full h-full top-0 left-0 z-50 bg-black bg-opacity-50 backdrop-blur-[17px] flex flex-col items-center justify-center">
         <div className="w-full max-w-lg mx-auto bg-stone-900 p-8 rounded-lg">
             <div className="text-2xl font-medium mb-6 flex justify-between">
                 <span>Leave feedback</span>
