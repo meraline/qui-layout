@@ -1,0 +1,8 @@
+@media screen and (min-width: 1279px) {
+    .news-swiper .swiper-slide-active {
+        transform: scale(1.2);
+        transform-origin: bottom center;
+        margin-right: 92px !important;
+        margin-left: 62px !important;
+    }
+}

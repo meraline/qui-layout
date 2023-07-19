@@ -1,0 +1,14 @@
+@import 'swiper/css';
+@import '@/swiper/navigation.css';
+@import '@/swiper/pagination.css';
+@import '@/swiper/news.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (max-width:1279px) {
+    .container {
+        max-width: 32rem
+    }
+}
