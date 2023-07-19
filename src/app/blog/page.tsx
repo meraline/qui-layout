@@ -36,7 +36,7 @@ export default function Blog() {
 
                     <div className="mb-16">
                         <div className="gap-4 flex mb-10 items-center flex-wrap">
-                            <div className="text-2xl">Tags:</div>
+                            <div className="text-[24px]">Tags:</div>
                             <div className="gap-4 flex items-center flex-wrap">
                                 <div className="px-3 py-1 bg-stone-500 rounded-[5px]">Academy</div>
                                 <div className="px-3 py-1 bg-stone-500 rounded-[5px]">Article</div>

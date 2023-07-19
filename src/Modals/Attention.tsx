@@ -10,7 +10,7 @@ export default function Attention() {
 
     const { setModal } = useLayout();
 
-    return <div className="w-full max-w-xl mx-auto bg-black bg-opacity-50 py-10 px-5 rounded-[22px] bg-no-repeat relative" style={{
+    return <div className="w-full max-w-[612px] mx-auto bg-neutral-700 py-10 px-5 rounded-[22px] bg-no-repeat relative" style={{
         backgroundImage: `url('${ModalBg.src}')`,
         backgroundPositionX: `center`,
         backgroundPositionY: `-700px`,
@@ -22,7 +22,7 @@ export default function Attention() {
         <div className="">
             <div className="text-center flex-col items-center gap-3 flex text-white mb-6">
                 <div className="justify-center flex">
-                    <Image width={undefined} height={undefined} alt="" className="w-12 h-auto" src={Chart.src} />
+                    <Image width={46} height={39} alt="" className="w-12 h-auto" src={Chart.src} />
                 </div>
                 <div className="text-[26px] font-medium">Attention! High network commissions!</div>
                 <div className="text-neutral-200">Note that when you send a transaction and consolidate the funds received in this direction, a significant portion of the total amount of exchange is made up by network commissions. As a result, your exchange for this amount can be very unprofitable.</div>

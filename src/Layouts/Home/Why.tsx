@@ -28,7 +28,7 @@ export default function Why(props: Object) {
             <div className="gap-8 grid grid-cols-1 xl:grid-cols-3 mb-16 px-4 xl:px-0">
                 {items.map((item, index) => <div key={index}>
                     <div className="space-y-2 flex flex-col">
-                        <Image width={156} height={156}className="w-44 h-auto self-center" src={item.image} alt="" />
+                        <Image width={156} height={156}className="w-44 h-auto self-center xl:self-start" src={item.image} alt="" />
                         <div className="text-zinc-100 text-xl font-semibold">{item.title}</div>
                         <div className="text-violet-100">{item.text}</div>
                     </div>

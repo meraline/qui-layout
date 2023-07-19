@@ -1,6 +1,4 @@
-import Chart from "@/images/chart.png"
 import PrimaryButton from "@/Components/PrimaryButton"
-import SecondaryButton from "@/Components/SecondaryButton"
 import ModalBg from "@/images/modalbg.svg"
 import { useLayout } from "@/Contexts/LayoutContext"
 import Close from "@/Icons/Close"
@@ -9,7 +7,7 @@ export default function InfoRate() {
 
     const { setModal } = useLayout();
 
-    return <div className="w-full max-w-5xl mx-auto bg-black bg-opacity-50 py-6 xl:py-10 px-5 rounded-[22px] bg-no-repeat relative" style={{
+    return <div className="w-full max-w-[1015px] mx-auto bg-neutral-700 py-6 xl:py-10 px-5 xl:px-10 rounded-[22px] bg-no-repeat relative" style={{
         backgroundImage: `url('${ModalBg.src}')`,
         backgroundPositionX: `-600px`,
         backgroundPositionY: `-600px`,
@@ -20,7 +18,7 @@ export default function InfoRate() {
         </a>
         <div className="">
             <div className="flex-col gap-3 flex text-white mb-4 xl:mb-6">
-                <div className="text-xl xl:text-[26px] mb-4 xl:mb-6">Какой курс выгоднее?</div>
+                <div className="text-xl xl:text-[26px] font-medium mb-4 xl:mb-6">Какой курс выгоднее?</div>
                 <div className="text-[13px] xl:text-lg leading-tight mb-4 xl:mb-6">
                     <div className="font-bold">Фиксированный курс:</div>
                     <div className="">Вы получите точную сумму, сколько указано в поле «вы получите»  при создании обмена.</div>
@@ -44,7 +42,7 @@ export default function InfoRate() {
                     </ol>
                 </div>
                 <div className="gap-5 flex flex-col items-center">
-                    <PrimaryButton disabled={false} className="rounded-xl w-full xl:max-w-sm" onClick={e => setModal(null)}>Понятно</PrimaryButton>
+                    <PrimaryButton disabled={false} className="rounded-xl w-full xl:max-w-[216px]" onClick={e => setModal(null)}>Понятно</PrimaryButton>
                 </div>
             </div>
         </div>

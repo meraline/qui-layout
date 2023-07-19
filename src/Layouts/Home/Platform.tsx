@@ -12,23 +12,23 @@ export default function Platform(props: Object) {
 
     const items = [
         {
-            image: Hand.src,
+            image: Incognito.src,
             text: `Мы  уважаем вашу приватность.`
         },
         {
-            image: Incognito.src,
+            image: Password.src,
             text: `Мы не требуем регистрации`
         },
         {
-            image: Password.src,
+            image: Settings.src,
             text: `Без удержания ваших средств`
         },
         {
-            image: Settings.src,
+            image: Wallet.src,
             text: `Мы работаем полностью в автоматическом режиме`
         },
         {
-            image: Wallet.src,
+            image: Hand.src,
             text: `Без скрытых комиссий`
         },
     ]

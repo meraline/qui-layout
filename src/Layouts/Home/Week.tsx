@@ -30,7 +30,7 @@ export default function Week(props: Object) {
                     <div className="space-y-4 xl:space-y-6 px-6 xl:px-7 py-6 xl:pt-9 xl:pb-9 bg-neutral-700 rounded-[22px] flex flex-col items-center">
                         <Image width={64} height={64}className="w-16 xl:w-24 h-auto" src={item.image} alt="" />
                         <div className="text-zinc-500">{item.title}</div>
-                        <div className="text-fuchsia-800 text-[32px] xl:text-[40px] font-bold">{item.text}</div>
+                        <div className="text-transparent bg-clip-text  bg-gradient-to-r from-[#90287B] to-[#9E2A5F] shadow-numbers text-[32px] xl:text-[40px] font-bold">{item.text}</div>
                     </div>
                 </div>)}
             </div>

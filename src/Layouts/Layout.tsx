@@ -365,7 +365,7 @@ const Layout: React.FC<LayoutPropsInterface> = ({ children, headerbg = false, he
             </footer>
             {feedbackModal ? <Feedback /> : ``}
             {modal ? <>
-                <div className="px-8 text-white fixed w-full h-full top-0 left-0 z-50 bg-neutral-700 backdrop-blur-[17px] flex flex-col py-16 items-center  overflow-y-auto"
+                <div className="px-8 text-white fixed w-full h-full top-0 left-0 z-50 bg-black bg-opacity-50 backdrop-blur-[17px] flex flex-col py-16 items-center  overflow-y-auto"
                     onClick={e => setModal(null)}
                 >
                     {modal}

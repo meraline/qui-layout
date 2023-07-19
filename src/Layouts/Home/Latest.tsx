@@ -8,7 +8,7 @@ import Image from 'next/image';
 export default function Latest(props: Object) {
 
 
-    return <div className={`container mx-auto mb-12 xl:-mt-64 opacity-[.99] text-white`}>
+    return <div className={`container mx-auto mb-12 xl:-mt-[306px] opacity-[.99] text-white`}>
         <div className="text-[22px] mb-2 text-center xl:text-left">LATEST TRANSACTIONS</div>
         <div className="relative latest-swiper">
             <Swiper
