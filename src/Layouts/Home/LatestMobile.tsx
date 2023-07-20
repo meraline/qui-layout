@@ -13,7 +13,7 @@ export default function LatestMobile(props: Object) {
         <div className="relative latest-swiper">
             <div className="grid grid-cols-1 gap-4">
                 {[0, 1, 2].map((item, index) => <div key={index}>
-                    <div className="bg-neutral-700 rounded-[18px] shadow px-8 py-5 no-select">
+                    <div className="bg-neutral-700 rounded-[18px] shadow px-6 xl: py-5 no-select">
                         <div className="flex flex-col space-y-4">
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center">

@@ -172,7 +172,7 @@ export default function Post() {
                                         <div className="absolute right-4 xl:right-6">
                                             <Dropdown />
                                         </div>
-                                        <label className="absolute top-3 left-4 xl:top-5 xl:left-6 text-neutral-400 text-[11px] xl:text-base">You send</label>
+                                        <label className="absolute top-5 left-4 xl:left-6 text-neutral-400 text-[11px] xl:text-base">You send</label>
                                         <input className="bg-neutral-700 xl:bg-white w-full pt-6 xl:pt-10 pb-3 xl:pb-5 pl-4 xl:pl-6 pr-36 rounded-xl outline outline-2 outline-rose-600 text-rose-600 text-xl xl:text-2xl leading-none" defaultValue="50" />
                                         <div className="absolute z-10 top-full mt-1 text-white bg-rose-700 bg-opacity-40 rounded-[11px] px-4 py-1 flex items-center">
                                             <svg className="w-10 h-auto absolute top-0 -translate-y-full text-rose-700 text-opacity-50" viewBox="0 0 42 9" fill="none" xmlns="http://www.w3.org/2000/svg">

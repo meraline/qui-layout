@@ -21,11 +21,11 @@ export default function Form() {
             <div className="flex flex-col xl:flex-row xl:space-x-3">
                 <div className="grow">
                     <div className="relative flex flex-col justify-center">
-                        <div className="absolute right-6">
+                        <div className="absolute right-4 xl:right-6">
                             <Dropdown />
                         </div>
-                        <label className="absolute top-3 left-4 xl:top-5 xl:left-6 text-neutral-400 text-[11px] xl:text-base">You send</label>
-                        <input className="leading-relaxed bg-neutral-700 xl:bg-white w-full pt-12 pb-5 pl-4 xl:pl-6 pr-36 rounded-xl outline outline-2 outline-rose-600 text-rose-600 text-xl xl:text-2xl" defaultValue="50" />
+                        <label className="absolute left-4 top-6 xl:top-5 xl:left-6 text-neutral-400 text-[11px] xl:text-base">You send</label>
+                        <input className="leading-relaxed bg-neutral-700 xl:bg-white w-full pt-10 xl:pt-12 pb-4 xl:pb-5 pl-4 xl:pl-6 pr-36 rounded-xl outline outline-2 outline-rose-600 text-rose-600 text-xl xl:text-2xl" defaultValue="50" />
                         <div className="absolute z-10 top-full mt-1 text-white bg-rose-700 backdrop-blur-[50px] bg-opacity-50 rounded-[11px] px-4 py-1 flex items-center">
                             <svg className="w-10 h-auto absolute top-0 -translate-y-full text-rose-700 opacity-50" viewBox="0 0 42 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M29 0L38 9L20 9L29 0Z" fill="currentColor" />
@@ -44,11 +44,11 @@ export default function Form() {
                 </div>
                 <div className="grow">
                     <div className="relative flex flex-col justify-center">
-                        <div className="absolute right-6">
+                        <div className="absolute right-4 xl:right-6">
                             <Dropdown />
                         </div>
                         <label className="absolute top-5 left-6 text-neutral-400 text-[11px] xl:text-base">You receive</label>
-                        <input className="bg-neutral-700 xl:bg-white w-full pt-12 pb-5 pl-6 pr-36 rounded-xl text-white xl:text-pink-950 text-xl xl:text-2xl" defaultValue="0,00544" />
+                        <input className="leading-relaxed bg-neutral-700 xl:bg-white w-full pt-10 xl:pt-12 pb-4 xl:pb-5 pl-4 xl:pl-6 pr-36 rounded-xl text-white xl:text-pink-950 text-xl xl:text-2xl" defaultValue="0,00544" />
                     </div>
                     <div className="flex justify-between text-white text-[13px] px-6 py-3">
                         <div className="w-4/5">1 USDT ≈ 0.0054 BTC</div>
@@ -59,7 +59,7 @@ export default function Form() {
             <div className="flex flex-col xl:flex-row xl:space-x-6">
                 <div className="grow mb-4 xl:mb-0">
                     <div className="relative flex flex-col justify-center">
-                        <div className="absolute right-6 text-white xl:text-pink-950">
+                        <div className="absolute right-4 xl:right-6 text-white xl:text-pink-950">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.4221 9.44434C10.1628 9.44434 9.91409 9.54735 9.73072 9.73072C9.54735 9.91409 9.44434 10.1628 9.44434 10.4221V14.3332H14.3332V9.44434H10.4221ZM13.111 13.111H10.6666V10.6666H13.111V13.111Z" fill="currentColor" />
                                 <path d="M9.44434 25.5776C9.44434 25.8369 9.54735 26.0856 9.73072 26.269C9.91409 26.4524 10.1628 26.5554 10.4221 26.5554H14.3332V21.6665H9.44434V25.5776ZM10.6666 22.8887H13.111V25.3332H10.6666V22.8887Z" fill="currentColor" />
@@ -83,7 +83,7 @@ export default function Form() {
                             </svg>
                         </div>
                         <label className="absolute top-5 left-6 text-[11px] xl:text-base text-neutral-400">Destination address</label>
-                        <input className=" bg-neutral-700 xl:bg-white w-full pt-12 pb-5 pl-6 pr-16 rounded-xl text-white xl:text-pink-950 text-xl xl:text-2xl" defaultValue="0x3242437a83f854dbae2c4913e514ea58f27a338f" />
+                        <input className="leading-relaxed bg-neutral-700 xl:bg-white w-full pt-10 xl:pt-12 pb-4 xl:pb-5 pl-4 xl:pl-6 pr-16 rounded-xl text-white xl:text-pink-950 text-xl xl:text-2xl" defaultValue="0x3242437a83f854dbae2c4913e514ea58f27a338f" />
                     </div>
                     <label className="space-x-3 items-center py-3 hidden xl:flex" htmlFor="ssdfsf">
                         <input type="checkbox" className="hidden peer" id="ssdfsf" />
@@ -109,7 +109,7 @@ export default function Form() {
                                 </div>
                             </div>
                         </label>
-                        <input className="bg-neutral-700 xl:bg-white w-full pt-12 pb-5 px-6 rounded-xl text-white xl:text-pink-950 text-xl xl:text-2xl" defaultValue="924028" />
+                        <input className="leading-relaxed bg-neutral-700 xl:bg-white w-full pt-10 xl:pt-12 pb-4 xl:pb-5 px-4 xl:px-6 rounded-xl text-white xl:text-pink-950 text-xl xl:text-2xl" defaultValue="924028" />
                     </div>
                     <div className="grow max-w-[10rem] space-x-3 justify-end items-center text-stone-400 py-3 hidden xl:flex">
                         <Shield className="w-4 h-auto" />
