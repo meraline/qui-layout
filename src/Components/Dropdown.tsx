@@ -5,6 +5,7 @@ import UsdtCoin from '@/images/coins/usdt.png';
 import BitCoin from '@/images/coins/bitcoin.png';
 import ChevronDown from "@/Icons/ChevronDown";
 import Image from "next/image";
+import { useLayout } from "@/Contexts/LayoutContext";
 
 const coinsData: Coin[] = [
     {
@@ -72,9 +73,15 @@ export default function Dropdown() {
     const [open, setOpen] = useState<boolean>(false);
     const [query, setQuery] = useState<string>(``);
 
+    const { setNooverflow } = useLayout();
+
     useEffect(() => {
         setOpen(false)
     }, [coin])
+
+    useEffect(() => {
+        setNooverflow(open)
+    }, [open])
 
     useEffect(() => {
         setCoins(coinsData.filter(el => el.code.toLowerCase().indexOf(query.toLowerCase()) > -1 || el.title.toLowerCase().indexOf(query.toLowerCase()) > -1))

@@ -18,6 +18,8 @@ export interface LayoutContextPropsInterface {
     setContactMenu: Function,
     countryMenu: boolean,
     setCountryMenu: Function,
+    nooverflow: boolean,
+    setNooverflow: Function,
 }
 
 const LayoutContext = createContext<LayoutContextPropsInterface>({
@@ -25,6 +27,8 @@ const LayoutContext = createContext<LayoutContextPropsInterface>({
     setFeedbackModal: Function,
     contactMenu: false,
     setContactMenu: Function,
+    nooverflow: false,
+    setNooverflow: Function,
     countryMenu: false,
     setCountryMenu: Function,
     modal: null,
@@ -44,6 +48,7 @@ const LayoutProvider: React.FC<LayoutProviderPropsInterface> = ({ children }) =>
     const [feedbackModal, setFeedbackModal] = useState<boolean>(false);
     const [contactMenu, setContactMenu] = useState<boolean>(false);
     const [countryMenu, setCountryMenu] = useState<boolean>(false);
+    const [nooverflow, setNooverflow] = useState<boolean>(false);
     const [country, setCountry] = useState<Country>(countries[0]);
 
     React.useEffect(() => {
@@ -77,6 +82,8 @@ const LayoutProvider: React.FC<LayoutProviderPropsInterface> = ({ children }) =>
             setCountry,
             feedbackModal,
             setFeedbackModal,
+            nooverflow,
+            setNooverflow,
             contactMenu,
             setContactMenu,
             countryMenu,

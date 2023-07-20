@@ -28,7 +28,8 @@ const Layout: React.FC<LayoutPropsInterface> = ({ children, headerbg = false, he
         country,
         setCountry,
         modal,
-        setModal
+        setModal,
+        nooverflow
     } = useLayout();
 
     useEffect(() => {
@@ -36,7 +37,7 @@ const Layout: React.FC<LayoutPropsInterface> = ({ children, headerbg = false, he
     }, [feedbackModal, setCountryMenu])
 
     return (
-        <div className="min-h-screen bg-neutral-800 relative">
+        <div className={`min-h-screen bg-neutral-800 relative ${nooverflow ? `max-h-screen` : ``}`}>
             <div className={`w-full h-[936px] absolute pointer-events-none bg-cover bg-bottom  ${headerbgmobile ? `` : `hidden xl:block`}`} style={headerbg ? { backgroundImage: `url('${Sky.src}')` } : {}} />
             <div className="mx-auto max-w-lg xl:max-w-full relative">
                 <header className="text-zinc-100 relative">
