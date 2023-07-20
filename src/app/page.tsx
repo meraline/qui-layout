@@ -19,6 +19,7 @@ import { useEffect, useState } from 'react';
 export default function Home() {
 
     const [mobile, setMobile] = useState<boolean>(false)
+    const [showLatest, setShowLatest] = useState<boolean>(false)
 
     const checkMobile = (e: Event) => {
         const el = e.target as Window;
@@ -26,6 +27,8 @@ export default function Home() {
     }
 
     useEffect(() => {
+        setMobile(window.innerWidth < 1280)
+        setShowLatest(true)
         window.addEventListener('resize', checkMobile)
         return () => {
             window.removeEventListener('resize', checkMobile)
@@ -46,7 +49,7 @@ export default function Home() {
                 </div>
 
                 <Form />
-                {mobile ? <LatestMobile /> : <Latest />}
+                {showLatest ? (mobile ? <LatestMobile /> : <Latest />) : ``}
                 <How />
                 <Week />
                 <Why />
