@@ -33,7 +33,7 @@ export default function Step4() {
         <Layout>
             <div className={`container mx-auto xl:pt-12 text-white flex flex-col`}>
                 <div className="bg-no-repeat bg-neutral-700 bg-opacity-75 xl:rounded-2xl xl:shadow px-8 py-6 relative overflow-hidden mb-5 order-2 xl:order-1 -mx-6 xl:mx-0">
-                    <Image width={undefined} height={undefined}src={Gradient.src} alt="" className="absolute left-[-157px] top-[-147px] xl:left-[-507px] xl:top-[-577px]" />
+                    <Image width="1165" height="947"src={Gradient.src} alt="" className="absolute left-[-157px] top-[-147px] xl:left-[-507px] xl:top-[-577px]" />
                     <div className="relative flex gap-4 xl:gap-8">
                         <div className="items-center gap-4 xl:gap-8 flex xl:grow">
                             <Tether className="w-10 xl:w-20 h-auto order-2 xl:order-1 shrink-0" />
