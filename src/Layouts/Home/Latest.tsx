@@ -23,7 +23,7 @@ export default function Latest(props: Object) {
                 }}
             >
                 {[0, 1, 2, 3, 4, 5, 6, 7].map((item, index) => <SwiperSlide key={index}>
-                    <div className="bg-neutral-700 rounded-[18px] shadow px-8 py-5 no-select">
+                    <div className="bg-neutral-700 rounded-[18px] shadow px-6 xl:px-8 py-5 no-select">
                         <div className="flex flex-col space-y-4">
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center">
