@@ -27,7 +27,7 @@ export default function Post() {
                     <div className="text-lg xl:text-xl mb-12">The question on everyone’s mind is: Is crypto dead?</div>
                     <div className="mx-auto items-center gap-2.5 flex text-lg whitespace-nowrap">
                         <div className="flex space-x-2">
-                            <Image width={undefined} height={undefined} alt="" className="w-6 h-6 rounded-full" src={Avatar.src} />
+                            <Image width={630} height={601} alt="" className="w-6 h-6 rounded-full" src={Avatar.src} />
                             <div className="opacity-75">Jack Shepard</div>
                         </div>
                         <div className="w-[5px] h-[5px] bg-white bg-opacity-25 rounded-full" />
@@ -44,7 +44,7 @@ export default function Post() {
             }}>
                 <div className={`container mx-auto text-white my-8 xl:my-20`}>
                     <div className={`flex justify-center mb-8`}>
-                        <Image width={undefined} height={undefined}src={Post1Image.src} alt=""/>
+                        <Image width={1028} height={423}src={Post1Image.src} alt=""/>
                     </div>
                     <div className="mb-16 leading-[42.50px]">
                         <div className="text-justify text-xl mb-12">In recent years, cryptocurrencies have been a topic of interest, excitement, and debate, with both supporters and detractors expressing strong opinions on their future. The question on everyone’s mind is: Is crypto dead?<br />Recently, a billionaire tech investor Chamath Palihapitiya claimed that crypto is pretty much dead in the United States — mainly because of the strict regulations imposed by the SEC. It remains to be seen how much those regulations will actually do to destroy the crypto market in the States and whether crypto assets will be able to weather this storm. However, we can still examine things we do know — existing crypto projects and businesses.<br />In this article, we’ll examine various aspects of cryptocurrency, its history, the current state of the market, and its potential future to determine if crypto is truly dead or if it’s simply experiencing growing pains.<br />A cryptocurrency is a digital asset that relies on cryptography and blockchain technology to enable secure, decentralized transactions. Unlike traditional currencies, cryptocurrencies are not regulated by central authorities, such as governments or financial institutions. This decentralization allows for faster transactions, lower fees, and increased privacy. Some of the most popular cryptocurrencies include Bitcoin, Ethereum, and XNR.</div>

@@ -91,11 +91,11 @@ export default function Dropdown() {
                 <ChevronDown className={`w-5 h-auto text-zinc-400 xl:text-indigo-900 transition duration-500 ${open ? `rotate-[180deg]` : ``}`} />
             </div>
         </div>
-        {open ? <div className="bg-zinc-100 px-3 py-4 rounded-[11px] border w-[20rem] z-50 absolute top-12">
+        {open ? <div className="bg-zinc-100 px-3 py-4 xl:rounded-[11px] left-0 xl:left-auto top-0 xl:top-auto border w-screen xl:w-[20rem] z-50 fixed xl:absolute xl:top-12">
             <input placeholder="Search currency..." className="block px-3 py-4 w-full bg-zinc-100 rounded-lg border border-black border-opacity-5 mb-4" onChange={e => {
                 setQuery(e.target.value)
             }} />
-            <ul className="flex-col gap-5 flex max-h-[15rem] overflow-y-auto no-select">
+            <ul className="flex-col gap-5 flex max-h-screen xl:max-h-[15rem] overflow-y-auto no-select">
                 {coins.map((item, index) => <li key={index}>
                     <a href="#" className="flex space-x-2 items-center"
                         onClick={e => {

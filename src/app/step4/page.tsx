@@ -108,7 +108,7 @@ export default function Step4() {
 
                         </div>
                         <div>
-                            <Image width={undefined} height={undefined}src={Tip.src} alt="" />
+                            <Image  width="1440" height="1021" src={Tip.src} alt="" />
                         </div>
                     </div>
                 </div>
@@ -328,11 +328,11 @@ export default function Step4() {
                             <div className="text-zinc-100">We’d love to know!</div>
                         </div>
                         <div className="justify-center items-center gap-6 flex">
-                            <Image width={undefined} height={undefined} alt="" className="w-10 h-10" src={Smile1.src} />
-                            <Image width={undefined} height={undefined} alt="" className="w-10 h-10" src={Smile2.src} />
-                            <Image width={undefined} height={undefined} alt="" className="w-10 h-10" src={Smile3.src} />
-                            <Image width={undefined} height={undefined} alt="" className="w-10 h-10" src={Smile4.src} />
-                            <Image width={undefined} height={undefined} alt="" className="w-10 h-10" src={Smile5.src} />
+                            <Image width={40} height={40} alt="" className="w-10 h-10" src={Smile1.src} />
+                            <Image width={40} height={40} alt="" className="w-10 h-10" src={Smile2.src} />
+                            <Image width={40} height={40} alt="" className="w-10 h-10" src={Smile3.src} />
+                            <Image width={40} height={40} alt="" className="w-10 h-10" src={Smile4.src} />
+                            <Image width={40} height={40} alt="" className="w-10 h-10" src={Smile5.src} />
                         </div>
                     </div>
                 </div>
