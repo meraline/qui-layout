@@ -42,7 +42,7 @@ export default function Blog({ isHome = true }) {
                                 <div className="px-4 pt-5 pb-6 space-y-6">
                                     <div className="space-y-2.5">
                                         <div className="text-2xl">How to keep privacy</div>
-                                        <div className="text-sm opacity-25 items-center gap-[7px] flex">
+                                        <div className="text-sm opacity-25 items-center gap-[7px] flex -tracking-[.5px]">
                                             <div className="">Jack Shepard</div>
                                             <div>&middot;</div>
                                             <div className="">2 min read</div>
