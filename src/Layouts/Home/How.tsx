@@ -18,18 +18,18 @@ export default function How(props: Object) {
         text: `After you've confirmed all the details and initiated the transfer, Quickex takes care of the rest. The platform will automatically exchange your cryptocurrencies at the best available rate. Once the transaction is complete, the exchanged cryptocurrency will be directly transferred to the recipient wallet address you provided. Transactions typically complete in a few minutes but can take longer depending on network congestion. Rest assured, your new funds will arrive safely in your wallet`
     },]
 
-    return <div className="bg-center bg-cover my-12 xl:my-0 xl:pt-12 xl:pb-16" style={{
+    return <div className="bg-center bg-cover my-12 xl:my-0 xl:pt-10 xl:pb-[54px]" style={{
         backgroundImage: `url('${HowBG.src}')`
     }}>
         <div className="container mx-auto opacity-[.99] text-white">
-            <div className="text-center mb-5 xl:mb-16 px-8 xl:px-0">
-                <div className="text-[26px] xl:text-[34px] uppercase mb-5 xl:mb-6">How to exchange cryptocurrency</div>
+            <div className="text-center mb-5 xl:mb-12 px-8 xl:px-0">
+                <div className="text-[26px] xl:text-[34px] uppercase mb-5">How to exchange cryptocurrency</div>
                 <div className="max-w-sm mx-auto shadow border border-fuchsia-800"></div>
             </div>
             <div className="gap-6 xl:gap-10 grid grid-cols-1 xl:grid-cols-3 mb-8 xl:mb-16">
                 {items.map((item, index) => <div key={index}>
-                    <div className="space-x-8 xl:space-x-0 xl:space-y-4 flex xl:flex-col items-center xl:items-start shadow-numbers">
-                        <div className="text-fuchsia-800 text-[80px] font-light shrink-0">{item.number}</div>
+                    <div className="space-x-8 xl:space-x-0 xl:space-y-2 flex xl:flex-col items-center xl:items-start">
+                        <div className="text-fuchsia-800 text-[80px] font-light shrink-0 shadow-numbers">{item.number}</div>
                         <div className="space-y-2">
                             <div className="text-zinc-100 text-2xl xl:text-[28px]">{item.title}</div>
                             <div className="text-violet-100">{item.text}</div>

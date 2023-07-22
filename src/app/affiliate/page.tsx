@@ -38,7 +38,7 @@ export default function Affiliate() {
             <div className="bg-neutral-800 relative overflow-hidden bg-center bg-no-repeat">
                 <div className={`container mx-auto text-white my-8 xl:my-16`}>
                     <div className="text-center mb-5 xl:mb-8 px-8 xl:px-0">
-                        <div className="text-[26px] xl:text-[34px] uppercase mb-5 xl:mb-6">Multifunctional Solution Based on Quickex API</div>
+                        <div className="text-[26px] xl:text-[34px] uppercase mb-5">Multifunctional Solution Based on Quickex API</div>
                         <div className="max-w-sm mx-auto shadow border border-fuchsia-800"></div>
                     </div>
                     <div className="text-center text-violet-100 text-xl xl:text-[28px] mb-8">For cryptocurrency wallets and exchangers, white-label projects and aggregators.</div>
@@ -101,7 +101,7 @@ export default function Affiliate() {
 
                     <div className="mb-16 xl:mb-24">
                         <div className="text-center mb-5 xl:mb-16 px-8 xl:px-0">
-                            <div className="text-[26px] xl:text-[34px] uppercase mb-5 xl:mb-6">Referral links and banners</div>
+                            <div className="text-[26px] xl:text-[34px] uppercase mb-5">Referral links and banners</div>
                             <div className="max-w-sm mx-auto shadow border border-fuchsia-800"></div>
                         </div>
                         <div className="text-center text-violet-100 text-xl xl:text-[28px] mb-8">Invite your visitors to exchange cryptocurrency using our referral link and get 50% of our income from the transactions of your referrals.</div>
@@ -135,7 +135,7 @@ export default function Affiliate() {
 
                     <div className="mb-16 xl:mb-24">
                         <div className="text-center mb-5 xl:mb-16 px-8 xl:px-0">
-                            <div className="text-[26px] xl:text-[34px] uppercase mb-5 xl:mb-6">Referral links and banners</div>
+                            <div className="text-[26px] xl:text-[34px] uppercase mb-5">Referral links and banners</div>
                             <div className="max-w-sm mx-auto shadow border border-fuchsia-800"></div>
                         </div>
                         <div className="text-center text-violet-100 text-xl xl:text-[28px] mb-8">Invite your visitors to exchange cryptocurrency using our referral link and get 50% of our income from the transactions of your referrals.</div>

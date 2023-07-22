@@ -8,7 +8,7 @@ import Image from 'next/image';
 export default function Latest(props: Object) {
 
 
-    return <div className={`container mx-auto mb-12 xl:-mt-[306px] opacity-[.99] text-white`}>
+    return <div className={`container mx-auto mb-12 xl:-mt-[280px] opacity-[.99] text-white`}>
         <div className="text-[22px] mb-2 text-center xl:text-left">LATEST TRANSACTIONS</div>
         <div className="relative latest-swiper">
             <Swiper
@@ -23,24 +23,24 @@ export default function Latest(props: Object) {
                 }}
             >
                 {[0, 1, 2, 3, 4, 5, 6, 7].map((item, index) => <SwiperSlide key={index}>
-                    <div className="bg-neutral-700 rounded-[18px] shadow px-6 xl:px-8 py-5 no-select">
-                        <div className="flex flex-col space-y-4">
+                    <div className="bg-neutral-700 rounded-[18px] shadow px-6 xl:px-8 pt-5 pb-3 no-select">
+                        <div className="flex flex-col space-y-[18px]">
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center">
-                                    <Image width={20} height={20} alt="" src={UsdtCoin.src} className="h-5 w-5" />
-                                    <div className="">USDT</div>
+                                    <Image width={20} height={20} alt="" src={UsdtCoin.src} className="h-[18px] w-[18px] mr-1.5" />
+                                    <div className="leading-none">USDT</div>
                                 </div>
                                 <LongArrow className="w-6 h-auto" />
                                 <div className="flex items-center">
-                                    <Image width={20} height={20} alt="" src={BitCoin.src} className="h-5 w-5" />
-                                    <div className="">SHIB</div>
+                                    <Image width={20} height={20} alt="" src={BitCoin.src} className="h-[18px] w-[18px] mr-1.5" />
+                                    <div className="leading-none">SHIB</div>
                                 </div>
                             </div>
                             <div className="flex items-center">
                                 <span className="text-2xl font-semibold">2608.0919</span>
                                 <span className="text-xl">USDT</span>
                             </div>
-                            <div className="text-neutral-500 text-[13px]">6 MINUTES AGO</div>
+                            <div className="text-neutral-500 text-[13px] relative -top-[3px]">6 MINUTES AGO</div>
                         </div>
                     </div>
                 </SwiperSlide>)}

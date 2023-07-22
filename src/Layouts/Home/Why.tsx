@@ -22,13 +22,13 @@ export default function Why(props: Object) {
     return <div className="bg-center bg-cover mb-12 xl:mb-16">
         <div className="container mx-auto opacity-[.99] text-white">
             <div className="text-center mb-5 xl:mb-16">
-                <div className="text-[26px] xl:text-[34px] uppercase mb-6">Why choose Quickex crypto exchange</div>
+                <div className="text-[26px] xl:text-[34px] uppercase mb-4">Why choose Quickex crypto exchange</div>
                 <div className="max-w-sm mx-auto shadow border border-fuchsia-800"></div>
             </div>
-            <div className="gap-8 grid grid-cols-1 xl:grid-cols-3 mb-16 px-4 xl:px-0">
+            <div className="gap-8 grid grid-cols-1 xl:grid-cols-3 mb-[68px] px-4 xl:px-0">
                 {items.map((item, index) => <div key={index}>
                     <div className="space-y-2 flex flex-col">
-                        <Image width={156} height={156}className="w-44 h-auto self-center xl:self-start" src={item.image} alt="" />
+                        <Image width={156} height={156}className="w-60 h-auto self-center xl:self-start -mx-10 -mt-10 -mb-4" src={item.image} alt="" />
                         <div className="text-zinc-100 text-xl font-semibold">{item.title}</div>
                         <div className="text-violet-100">{item.text}</div>
                     </div>

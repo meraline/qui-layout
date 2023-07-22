@@ -64,7 +64,7 @@ export default function News(props: Object) {
     return <div className="bg-center bg-cover mb-16">
         <div className="container mx-auto opacity-[.99] text-white">
             <div className="text-center mb-5 xl:mb-16">
-                <div className="text-[26px] xl:text-[34px] uppercase mb-6">QUICKEX NEWS</div>
+                <div className="text-[26px] xl:text-[34px] uppercase mb-4">QUICKEX NEWS</div>
                 <div className="max-w-sm mx-auto shadow border border-fuchsia-800"></div>
             </div>
 

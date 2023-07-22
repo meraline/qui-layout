@@ -9,8 +9,8 @@ export default function WeAre(props: Object) {
 
     return <div className="bg-center bg-cover mb-6 xl:mb-32">
         <div className="container mx-auto opacity-[.99] text-white">
-            <div className="text-center mb-5 xl:mb-12">
-                <div className="text-[26px] xl:text-[34px] uppercase mb-6">WE ARE QUICKEX</div>
+            <div className="text-center mb-5 xl:mb-10">
+                <div className="text-[26px] xl:text-[34px] uppercase mb-4">WE ARE QUICKEX</div>
                 <div className="max-w-sm mx-auto shadow border border-fuchsia-800"></div>
             </div>
             <div className="bg-neutral-700 rounded-[22px] shadow flex flex-col xl:flex-row xl:items-center xl:justify-between px-8 xl:px-12 mb-8 pb-8 xl:pb-0">

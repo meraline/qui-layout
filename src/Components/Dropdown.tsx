@@ -88,7 +88,7 @@ export default function Dropdown() {
     }, [query])
 
     return <div className="relative flex flex-col items-center">
-        <div className="absolute px-3 py-0.5 bg-neutral-500 bg-opacity-60 rounded-[11px] -top-3 z-10">
+        <div className="absolute px-3 py-px bg-neutral-500 bg-opacity-60 rounded-[11px] -top-1.5 z-10">
             <div className="text-white text-[11px] uppercase">sol</div>
         </div>
         <div className="px-2 py-2.5 bg-neutral-600 xl:bg-zinc-100 rounded-[11px] cursor-pointer" onClick={e => setOpen(prev => !prev)}>

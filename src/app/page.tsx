@@ -41,9 +41,9 @@ export default function Home() {
             headerbgmobile={false}
         >
             <div className="max-w-screen overflow-hidden">
-                {/**/} <div className={`container mx-auto xl:my-12`}>
+                <div className={`container mx-auto xl:mb-12 xl:mt-[44px]`}>
                     <div className="flex-col justify-center items-center gap-2 flex text-white">
-                        <div className="text-center text-2xl xl:text-[32px] text-gray-100 opacity-[.99] -tracking-[.5px]">Exchange Your Cryptocurrency Instantly on Quickex at the Best Market Rates</div>
+                        <div className="text-center text-2xl xl:text-[34px] text-gray-100 opacity-[.99] -tracking-[.5px]">Exchange Your Cryptocurrency Instantly on Quickex at the Best Market Rates</div>
                         <div className="opacity-80 text-center text-[20px] hidden xl:block max-w-[1023px]">Quickex is a trusted and secure crypto exchange platform launched in 2018. Exchange Bitcoin, Ethereum, Tether, BNB and hundreds of different altcoins at the best rates in a simple and secure way. </div>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ export default function Blog({ isHome = true }) {
     return <div className="bg-center bg-cover mb-16">
         <div className={`${isHome ? `container mx-auto` : ``} opacity-[.99] text-white`}>
             {isHome ? <div className="text-center mb-5 xl:mb-16">
-                <div className="text-[26px] xl:text-[34px] uppercase mb-6">BLOG POSTS</div>
+                <div className="text-[26px] xl:text-[34px] uppercase mb-4">BLOG POSTS</div>
                 <div className="max-w-sm mx-auto shadow border border-fuchsia-800"></div>
             </div> : ``}
             <div className="relative blog-swiper -mx-2 xl:-mx-5">

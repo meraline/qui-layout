@@ -20,7 +20,7 @@ export default {
         DEFAULT: '1.5rem',
         // sm: '2rem',
         // lg: '4rem',
-        xl: '2.25rem',
+        xl: '2.5rem',
         // '2xl': '6rem',
       },
     },
@@ -48,6 +48,7 @@ export default {
         },
         pink: {
           100: "#F8DEF0",
+          800: "#9F2B5F",
           950: "#3E0730"
         },
         fuchsia: {
@@ -58,7 +59,11 @@ export default {
           700: "#D61134"
         },
         stone: {
+          400: "#AC8797",
           500: "#686868"
+        },
+        violet: {
+          100: "#EDEBF6"
         }
       }
     },

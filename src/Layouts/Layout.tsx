@@ -45,13 +45,13 @@ const Layout: React.FC<LayoutPropsInterface> = ({ children, headerbg = false, he
                         <Link href={'/'} className="block pt-2 ">
                             <ApplicationLogo className="w-[110px] h-auto" />
                         </Link>
-                        <div className="items-center gap-9 inline-flex">
+                        <div className="items-center gap-[27px] inline-flex">
                             <TopMenu />
                             <div className="flex gap-3 items-center">
                                 <a href="#" className="w-7 h-7 bg-opacity-30 bg-violet-100 rounded-full items-center justify-center hidden xl:flex">
                                     <User className="h-3.5 w-auto" />
                                 </a>
-                                <div>
+                                <div className="pr-[18px]">
                                     <a href="#" className="h-7 flex items-center gap-1.5"
                                         onClick={e => {
                                             e.preventDefault();
